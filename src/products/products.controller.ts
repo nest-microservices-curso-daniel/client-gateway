@@ -27,14 +27,6 @@ export class ProductsController {
         throw new RpcException(err);
       })
     )
-    // try {
-    //   return await firstValueFrom(
-    //     this.productClient.send({ cmd: 'get-product' }, { id })
-    //   );
-
-    // } catch (error) {
-    //   throw new RpcException(error);
-    // }
   }
 
   @Patch(':id')
